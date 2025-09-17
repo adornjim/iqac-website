@@ -1,6 +1,6 @@
 # Internal Quality Assurance Cell (IQAC) Website
 
-A modern, responsive website for the Internal Quality Assurance Cell of Christ (Deemed to be University), Bangalore.
+A modern, responsive website for the Internal Quality Assurance Cell 
 
 ## 🎯 About
 
@@ -154,27 +154,12 @@ The website is deployed and accessible at: [Your GitHub Pages URL will appear he
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
+2. Create a feature branch 
+3. Commit your changes 
+4. Push to the branch 
 5. Open a Pull Request
 
-## 📞 Support
-
-For technical support or questions about the website:
-- Email: iqac@christuniversity.in
-- Phone: +91 80 4012 9100
-
-## 📄 License
-
-© 2025 Christ (Deemed to be University). All rights reserved.
-
-## 🙏 Acknowledgments
-
-- Christ (Deemed to be University) for the content and information
-- Font Awesome for the icons
-- Modern web standards and best practices
 
 ---
 
-**Last Updated**: January 2025
+

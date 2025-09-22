@@ -158,6 +158,25 @@
     <button type="submit">Submit Feedback</button>
   </form>
 
+  <!-- Custom popup -->
+  <div id="popup" style="
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4CAF50; /* Green box */
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      font-size: 18px;
+      z-index: 1000;
+      text-align: center;
+  ">
+    Form Submitted Successfully!
+  </div>
+
   <p id="status"></p>
 </section>
 <script>
@@ -170,21 +189,31 @@
 <script>
 document.getElementById("feedbackForm").addEventListener("submit", async (e) => {
   e.preventDefault();
-  
+  const popup = document.getElementById("popup");
+  const status = document.getElementById("status");
+
   const data = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value
   };
 
-  const res = await fetch("http://localhost:5000/feedback", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  });
-
-  const result = await res.text();
-  document.getElementById("status").innerText = result;
+  try {
+    const res = await fetch("http://localhost:5000/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+    const text = await res.text();
+    status.innerText = text;
+    if (res.ok) {
+      popup.style.display = 'block';
+      setTimeout(() => { popup.style.display = 'none'; }, 3000);
+      e.target.reset();
+    }
+  } catch (err) {
+    status.innerText = 'Error submitting feedback';
+  }
 });
 </script>
 

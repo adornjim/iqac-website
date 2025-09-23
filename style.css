@@ -532,8 +532,8 @@ header nav a.active {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   display: flex;
   flex-direction: column;
-  opacity: 0;         /* hidden initially for animation */
-  transform: translateY(50px);
+  opacity: 1;         /* visible by default */
+  transform: none;
 }
 
 /* Fade-in class */

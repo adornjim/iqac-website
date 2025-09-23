@@ -16,7 +16,7 @@
       <a href="#committees" id="committeesBtn">Committees</a>
       <a href="#" id="documentsBtn">Documents</a>
       <a href="#" id="feedbackBtn">Feedback</a>
-      <a href="pages/contact.html">Contact</a>
+      <a href="#contact" id="contactBtn" >Contact</a>
     </nav>
   </header>
 
@@ -217,7 +217,42 @@ document.getElementById("feedbackForm").addEventListener("submit", async (e) => 
 });
 </script>
 
+<section id="contact" class="contact-section" style="padding:50px 20px; background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+  <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px; color:#333;">📞 Contact Us</h2>
+ 
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 900px; margin: auto;">
+   
+    <!-- Principal -->
+    <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+      <h3 style="margin-bottom: 10px; color:#0077b6;">👨‍🎓 Principal</h3>
+      <p><strong>Dr. A. B. Sharma</strong></p>
+      <p>✉️ <a href="mailto:principal@college.edu" style="color:#0077b6; text-decoration:none;">principal@college.edu</a></p>
+      <p>📱 <a href="tel:+911234567890" style="color:#0077b6; text-decoration:none;">+91-1234567890</a></p>
+    </div>
 
+    <!-- IQAC Coordinator -->
+    <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+      <h3 style="margin-bottom: 10px; color:#009688;">📑 IQAC Coordinator</h3>
+      <p><strong>Ms. C. D. Verma</strong></p>
+      <p>✉️ <a href="mailto:iqac@college.edu" style="color:#009688; text-decoration:none;">iqac@college.edu</a></p>
+      <p>📱 <a href="tel:+919876543210" style="color:#009688; text-decoration:none;">+91-9876543210</a></p>
+    </div>
+
+    <!-- Office -->
+    <div style="background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+      <h3 style="margin-bottom: 10px; color:#e63946;">🏢 Office</h3>
+      <p>✉️ <a href="mailto:office@college.edu" style="color:#e63946; text-decoration:none;">office@college.edu</a></p>
+      <p>📱 <a href="tel:+911122334455" style="color:#e63946; text-decoration:none;">+91-1122334455</a></p>
+    </div>
+   
+  </div>
+</section>
+
+<style>
+  .contact-section div:hover {
+    transform: translateY(-8px);
+  }
+</style>
   </main>
 
   <footer>
